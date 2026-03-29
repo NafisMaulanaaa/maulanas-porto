@@ -138,7 +138,7 @@ function App() {
             </div>
           </div>
 
-          <p>
+          <p className="reveal delay-1">
             My journey in the creative field started when I was <b>nine</b>, when I first got interested in design and video editing. What began as simple curiosity gradually turned into something more serious, especially as I started working on real projects. Over time, I’ve had the chance to work with a variety of clients, both local and international, which helped me grow not just in terms of skills, but also in understanding different styles, audiences, and creative needs.
           </p>
 

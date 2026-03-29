@@ -245,6 +245,26 @@ body {
   font-weight: 600;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delay biar muncul satu-satu */
+.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  transition-delay: 0.3s;
+}
+
 .socials {
   display: flex;
   gap: 12px;
@@ -416,7 +436,7 @@ body {
 .tools-track {
   display: flex;
   width: max-content;
-  animation: scrollTools 25s linear infinite;
+  animation: scrollTools 10s linear infinite;
   will-change: transform;
 }
 
@@ -431,7 +451,7 @@ body {
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translate3d(-60%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
@@ -729,6 +749,11 @@ body {
 
   .footer-socials img {
     width: 44px;
+  }
+
+  .btn {
+    font-size: clamp(14px, 2vw, 20px);
+    padding: clamp(8px, 1.5vw, 12px) clamp(20px, 4vw, 46px);
   }
 }
 
