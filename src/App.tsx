@@ -91,6 +91,8 @@ function App() {
     return () => elements.forEach((el) => observer.unobserve(el));
   }, []);
 
+  const [showMore, setShowMore] = useState(false);
+
   return (
     <>
       {/*Hero*/}
@@ -137,12 +139,21 @@ function App() {
           </div>
 
           <p>
-           My journey in the creative field started when I was <b>nine</b>, when I first got interested in design and video editing. What began as simple curiosity gradually turned into something more serious, especially as I started working on real projects. Over time, I’ve had the chance to work with a variety of clients, both local and international, which helped me grow not just in terms of skills, but also in understanding different styles, audiences, and creative needs.
+            My journey in the creative field started when I was <b>nine</b>, when I first got interested in design and video editing. What began as simple curiosity gradually turned into something more serious, especially as I started working on real projects. Over time, I’ve had the chance to work with a variety of clients, both local and international, which helped me grow not just in terms of skills, but also in understanding different styles, audiences, and creative needs.
           </p>
 
-          <p>
-            Through these experiences, I’ve learned how to turn ideas into visual content that feels clear and meaningful, while keeping communication smooth and the process well-organized. I’m always looking to improve and take on new challenges, whether it’s in design, editing, or content creation, with the goal of creating work that looks good but also delivers real impact.
-          </p>
+          {showMore && (
+            <p>
+              Through these experiences, I’ve learned how to turn ideas into visual content that feels clear and meaningful, while keeping communication smooth and the process well-organized. I’m always looking to improve and take on new challenges, whether it’s in design, editing, or content creation, with the goal of creating work that looks good but also delivers real impact.
+            </p>
+          )}
+
+          <button 
+            className="show-more-btn"
+            onClick={() => setShowMore(!showMore)}
+          >
+            {showMore ? "Show Less" : "Show More"}
+          </button>
         </div>
       </div>
 

@@ -272,6 +272,22 @@ body {
   margin-bottom: 16px;
 }
 
+.show-more-btn {
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.show-more-btn:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
 
 /*My Experinece**/
 .work {
@@ -760,17 +776,18 @@ body {
 
 .modal-card {
   width: 90%;
-  max-width: 900px;
+  max-width: 800px;
+  max-height: 90vh;
 
-  border-radius: 24px;
-  overflow: hidden;
+  border-radius: 20px;
+  overflow-y: auto;
 
-  background: rgba(25,25,25,0.9);
+  background: rgba(25,25,25,0.95);
   backdrop-filter: blur(20px);
 
   border: 1px solid rgba(255,255,255,0.08);
 
-  animation: fadeIn 0.3s ease;
+  animation: fadeIn 0.25s ease;
 }
 
 .modal-image {
@@ -780,13 +797,25 @@ body {
 }
 
 .modal-content {
-  padding: 32px;
+  padding: 24px;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
   text-align: left;
+  gap: 2px;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 2px;
+}
+
+.modal-content p {
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .modal-content h2 {
@@ -797,8 +826,8 @@ body {
 
 .modal-content .location {
   font-size: 14px;
-  color: rgba(255,255,255,0.6);
   margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .modal-content p {
@@ -936,5 +965,41 @@ body {
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-card {
+    width: 92%;
+    max-width: 100%;
+    border-radius: 16px;
+  }
+
+  .modal-content {
+    padding: 18px;
+  }
+
+  .modal-title {
+    font-size: 20px;
+  }
+
+  .modal-content p {
+    font-size: 13px;
+  }
+
+  .tools-list span {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  .see-detail {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .close-btn {
+    font-size: 18px;
+    top: 10px;
+    right: 10px;
   }
 }
