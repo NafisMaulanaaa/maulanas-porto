@@ -39,7 +39,7 @@ function WorkSection() {
       title: "GN Motion",
       image: "/work_gn.png",
       modalImage: "/gn motion_modal.png",
-      location: "Tahiland",
+      location: "Thailand",
       desc: "I also worked as a freelance creative for GN Motion, a CGI-based agency, where I produced video reels for promotional purposes. My role focused on turning high-quality visuals into engaging short-form content that captures attention and strengthens the brand’s presence.",
       tools: ["Adobe Premier Pro", "Adobe After Effects", "Notion"],
       link: "https://drive.google.com/drive/folders/1anroCbZiiMu93OrXwf9dQT_gp0blRy8S?usp=sharing" 
